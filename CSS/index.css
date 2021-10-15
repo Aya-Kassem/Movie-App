@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth !important;
+}
+body{
+    background-color: #000000f2;
+    color: #212129;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.loading-page{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 101, 92, .95);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    z-index: 8080;
+}
+
+.navbar{
+    position: fixed;
+    left: -250px;
+    /* left: 0; */
+    top: 0;
+    height: 100vh;
+    z-index: 50;
+    transition: left .8s ease;
+}
+.closed-nav{
+    position: absolute;
+    left: 100%;
+    width: 60px;
+    height: 100%;
+}
+.logo{
+    width: 30px;
+}
+.cenetr-icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#open-icon{
+    cursor: pointer;
+    font-size: 25px;
+}
+.social-icons{
+    position: absolute;
+    bottom: 30px;
+}
+.fa-globe{
+    margin-bottom: 20px;
+}
+.social-icons i{
+    font-size: 16px;
+    color: #212129;
+}
+.opened-nav{
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    z-index: 30;
+}
+.opened-nav ul li a,
+.soical a{
+    color: #f9f9f9;
+}
+.opened-nav ul li a:hover,
+.soical a:hover{
+    color: #ff655c;
+}
+.opened-nav ul{
+    overflow: hidden;
+}
+.opened-nav ul li{
+    margin-bottom: 25px;
+}
+.opened-nav ul li a {
+    display: block;
+    transform: translateY(320px);
+}
+.soical{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.soical p {
+    color: #999999;
+}
+.form-control {
+    font-size: 17px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
+.form-control::placeholder{
+    text-align: center;
+}
+.form-control:focus {
+    background-color: inherit;
+}
+.movies-section  .row:first-child {
+    width: 90%;
+}
+.movie-data{
+    position: relative;
+    overflow: hidden;
+}
+.movie-poster{
+    border-radius: 5px;
+}
+.movie-detailes{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    color: #000;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .6);
+    transition: height .7s ease;
+}
+.movie-title{
+    font-weight: lighter;
+}
+.movie-data:hover .movie-detailes{
+    height: 100%;
+}
+.contact h2{
+    margin-left: 50px;
+}
+.contact .row{
+    width: 90%;
+}
+.btn-outline-danger:hover{
+    background-color: inherit;
+}
+.alert{
+    padding: 12px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    width: 100%;
+    display: none;
+}
+.btn-outline-danger:focus {
+    box-shadow: none;
+}
+
+

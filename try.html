@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+
+
+    <title>EXAM</title>
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div class="navbar p-0">
+        <div class="closed-nav py-4 bg-white d-flex align-items-center flex-column">
+            <img src="./images/logo.png" class="logo">
+            <div class="cenetr-icons">
+                <i class="fas fa-align-justify" id="open-icon"></i>
+            </div>
+            <div class="d-flex flex-column social-icons">
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <a href ="#"><i class="fas fa-share-alt"></i></a>
+            </div>
+        </div>
+        <div class="opened-nav p-4">
+            <ul class="list-unstyled">
+                <li class="">
+                    <a href="#" id="now_playing">Now Playing</a>
+                </li>
+                <li>
+                    <a href="#" id="popular">Popular</a>
+                </li>
+                <li>
+                    <a href="#" id="top_rated">Top Rated</a>
+                </li>
+                <li>
+                    <a href="#" id="trending">Trending</a>
+                </li>
+                <li>
+                    <a href="#" id="upcoming">Upcoming</a>
+                </li>
+                <li>
+                    <a href="#contact" id="contact">Contact Us</a>
+                </li>
+            </ul>
+            <div class="soical">
+                <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+                <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+                <a href="#"><i class="fas fa-globe mx-2"></i></a>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- MAIN SECTION START -->
+    <section class="my-5 container movies-section">
+        <div class="row movies-search justify-content-center mx-auto mb-5">
+            <div class="col-md-6 my-md-0 my-4">
+                <div>
+                    <input class="form-control" id="api-search" placeholder="get movies by word ...">
+                </div>
+            </div>
+            <div class="col-md-6 my-md-0 my-4">
+                <div>
+                    <input class="form-control" id="page-search" placeholder="search ...">
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 search-results mx-auto"></div>
+        <div class="row p-0 display-data mx-auto">
+            
+        </div>
+    </section>
+    <!-- MAIN SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+    <section class="contact container" id="contact">
+        <h2 class="text-white">Contact Us</h2>
+        <form class="row mx-auto my-4" id="form">
+            <div class="col-md-6 my-2">
+                <div>
+                    <input class="form-control" placeholder="Enter Your Name" type="text" name="name" required>
+                    <div class="alert justify-content-center align-items-center text-center">
+                        <span class="alert-massage">inter valid name start with capital character</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div>
+                    <input class="form-control" placeholder="Enter Email" type="email" name="mail">
+                    <div class="alert justify-content-center align-items-center text-center">
+                        <span class="alert-massage">inter valid Email</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div>
+                    <input class="form-control" placeholder="Enter Phone" name="phone" maxlength="11">
+                    <div class="alert justify-content-center align-items-center text-center">
+                        <span class="alert-massage">inter valid Phone Number</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div>
+                    <input class="form-control" placeholder="Enter Age" name="age">
+                    <div class="alert justify-content-center align-items-center text-center">
+                        <span class="alert-massage">inter valid Age</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div>
+                    <input class="form-control" placeholder="Enter Password" type="password" name="password">
+                    <div class="alert justify-content-center align-items-center text-center">
+                        <span class="alert-massage">entre valid password *Minimum eight characters, *maximum 12 characters, at least one letter and one number:*</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 my-2">
+                <div>
+                    <input class="form-control" placeholder="Enter RePassword" type="password" name="repassword">
+                    <div class="alert justify-content-center align-items-center text-center">
+                        <span class="alert-massage" id="rePass">inter valid rePassword</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <button type ="submit" class="btn btn-outline-danger text-danger" id="sub-btn">Submit</button>
+            </div>
+        </form>
+    </section>
+    <!-- CONTACT SECTION END -->
+ 
+        <!-- JAVASCRIPT FILES -->
+        <script src="JS/bootstrap.bundle.js"></script>
+        <script src="jquery/jquery.min.js"></script>
+        <script src="JS/javascript.js"></script>
+</body>
+</html>
