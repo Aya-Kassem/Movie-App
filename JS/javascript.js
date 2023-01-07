@@ -23,7 +23,7 @@ function NavLinksUp(){
     document.querySelector("#top_rated").style.cssText = "transform: translateY(0); transition: transform .2s .4s ease"
     document.querySelector("#trending").style.cssText = "transform: translateY(0); transition: transform .2s .6s ease"
     document.querySelector("#upcoming").style.cssText = "transform: translateY(0); transition: transform .2s .8s ease"
-    document.querySelector("#contact").style.cssText = "transform: translateY(0); transition: transform .2s 1s ease"
+    document.querySelector(".contact").style.cssText = "transform: translateY(0); transition: transform .2s 1s ease"
 }
 
 // GLOBAL VARIABLES.................
@@ -140,9 +140,7 @@ document.querySelector('[name="name"]').addEventListener('keyup', function (){
     nameValue = this.value;
     if(nameRegex.test(nameValue)){
         this.nextElementSibling.style.display = 'none'
-        this.style.cssText = 
-        `box-shadow: 0 0 0 0.25rem rgb(255 101 92) !important; 
-        border-bottom: none !important`
+        this.classList.add('valid')
     }
     formValid()
 })
@@ -151,9 +149,7 @@ document.querySelector('[name = "mail"]').addEventListener('keyup', function (){
     mailValue = this.value;
     if(mailRegex.test(mailValue)){
         this.nextElementSibling.style.display = 'none'
-        this.style.cssText = 
-        `box-shadow: 0 0 0 0.25rem rgb(255 101 92) !important;
-        border-bottom: none !important`
+        this.classList.add('valid')
     }
     formValid()
 })
@@ -162,9 +158,7 @@ document.querySelector('[name="phone"]').addEventListener('keyup', function (){
     phoneValue = this.value;
     if(phoneRegex.test(phoneValue)){
         this.nextElementSibling.style.display = 'none'
-        this.style.cssText = 
-        `box-shadow: 0 0 0 0.25rem rgb(255 101 92) !important;
-        border-bottom: none !important`
+        this.classList.add('valid')
     }
     formValid()
 })
@@ -173,9 +167,7 @@ document.querySelector('[name = "age"]').addEventListener('keyup', function (){
     ageValue = this.value;
     if(ageRegex.test(ageValue)){
         this.nextElementSibling.style.display = 'none'
-        this.style.cssText = 
-        `box-shadow: 0 0 0 0.25rem rgb(255 101 92) !important;
-        border-bottom: none !important`
+        this.classList.add('valid')
     }
     formValid()
 })
@@ -184,9 +176,7 @@ document.querySelector('[name = "password"]').addEventListener('keyup', function
     passValue = this.value;
     if(passRegex.test(passValue)){
         this.nextElementSibling.style.display = 'none'
-        this.style.cssText = 
-        `box-shadow: 0 0 0 0.25rem rgb(255 101 92) !important;
-        border-bottom: none !important`
+        this.classList.add('valid')
     }
     formValid()
 })
@@ -195,9 +185,7 @@ document.querySelector('[name="repassword"]').addEventListener('keyup', function
     repassValue = this.value;
     if(passRegex.test(repassValue) && passValue == repassValue){
         this.nextElementSibling.style.display = 'none'
-        this.style.cssText = 
-        `box-shadow: 0 0 0 0.25rem rgb(255 101 92) !important;
-        border-bottom: none !important`
+        this.classList.add('valid')
     }
     formValid()
 })
