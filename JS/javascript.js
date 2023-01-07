@@ -36,7 +36,8 @@ searchData = [];
 // API FUNCTION .......
 async function getApiData(url = baseLink){
     let currentURL = url;
-    allData = (await (await fetch(currentURL)).json()).results;
+    allData = await (await fetch(currentURL)).json();
+    allData = allData.results;
     let moviesRow = document.querySelector(".display-data");
     displayMovies(allData, moviesRow)
 }
